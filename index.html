@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prueba de Git</title>
+</head>
+<body>
+    <h1>Mensajes de Apoyo</h1>
+    
+    <div id="mensaje"></div>
+
+    <script>
+        var mensajes = [
+            "¡Buena suerte! Hoy será un gran día.",
+            "¡Ánimo! No te rindas, estás más cerca de lo que crees.",
+            "La suerte favorece a los valientes. ¡Tú puedes!",
+            "Recuerda que cada día es una nueva oportunidad. Aprovecha la tuya.",
+            "¡No te desanimes! El éxito está a la vuelta de la esquina.",
+            "No importa cuántas veces caigas, lo importante es cuántas veces te levantes.",
+            "Tú eres más fuerte de lo que crees. ¡Confía en ti mismo!",
+            "Hoy es un buen día para sonreír y ser feliz. ¡Adelante!",
+            "La suerte está de tu lado. Ve por ello con todo tu corazón.",
+            "Eres capaz de lograr grandes cosas. No te subestimes.",
+        ];
+
+        function obtenerMensajeAleatorio() {
+            var indice = Math.floor(Math.random() * mensajes.length);
+            return mensajes[indice];
+        }
+
+        document.getElementById("mensaje").innerHTML = obtenerMensajeAleatorio();
+    </script>
+</body>
+</html>
